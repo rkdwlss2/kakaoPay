@@ -21,7 +21,7 @@ repositories {
 dependencies {
     // h2 db
     // https://mvnrepository.com/artifact/com.h2database/h2
-    testImplementation group: 'com.h2database', name: 'h2', version: '1.4.200'
+    implementation 'com.h2database:h2:1.4.200'
 
     //validation check
     // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-validation
@@ -32,6 +32,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
